@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="fondo_oscuro">#121212</color>
+    <color name="fondo_panel">#1E1E1E</color>
+    <color name="fondo_celda">#2A2A2A</color>
+    <color name="texto_blanco">#FFFFFF</color>
+    <color name="texto_gris">#B0B0B0</color>
+    <color name="acento">#00BCD4</color>
+    <color name="acento_oscuro">#0097A7</color>
+    <color name="seleccion">#FFC107</color>
+    <color name="peligro">#C62828</color>
+    <color name="filtro">#5E35B1</color>
+    <color name="badge_fondo">#99000000</color>
+</resources>

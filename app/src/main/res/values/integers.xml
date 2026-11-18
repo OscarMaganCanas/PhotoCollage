@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Columnas por defecto del collage: se adapta al tamaño/orientación de pantalla -->
+    <integer name="columnas_por_defecto">2</integer>
+</resources>

@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">PhotoCollage</string>
+    <string name="titulo_collage">PhotoCollage</string>
+    <string name="subtitulo_contador">%1$d foto(s) · %2$d columna(s)</string>
+    <string name="desc_imagen">Foto %1$d del collage</string>
+
+    <!-- Botones -->
+    <string name="btn_anadir">＋ Añadir fotos</string>
+    <string name="btn_eliminar">Eliminar foto</string>
+    <string name="btn_eliminar_todas">Vaciar collage</string>
+    <string name="btn_bn">Blanco y negro</string>
+    <string name="btn_sepia">Sepia</string>
+    <string name="btn_restaurar">Restaurar original</string>
+    <string name="btn_rotar">Rotar 90°</string>
+    <string name="btn_texto">Texto</string>
+    <string name="btn_columnas">Columnas: %1$d</string>
+    <string name="btn_compartir">Compartir</string>
+    <string name="btn_guardar">Guardar</string>
+
+    <!-- Sliders -->
+    <string name="label_brillo">Brillo: %1$+d</string>
+    <string name="label_saturacion">Saturación: %1$d%%</string>
+
+    <!-- Mensajes -->
+    <string name="msg_sin_seleccion">Selecciona primero una foto del collage</string>
+    <string name="msg_collage_vacio">El collage está vacío.\nPulsa «Añadir fotos» para empezar.</string>
+    <string name="msg_collage_vacio_corto">El collage está vacío</string>
+    <string name="msg_ninguna_elegida">No has elegido ninguna foto</string>
+    <string name="msg_duplicadas">%1$d foto(s) ya estaban en el collage y no se han añadido</string>
+    <string name="msg_anadidas">%1$d foto(s) añadida(s)</string>
+    <string name="msg_error_carga">No se pudieron cargar %1$d foto(s)</string>
+    <string name="msg_limite">Máximo %1$d fotos en el collage</string>
+    <string name="msg_eliminada">Foto eliminada</string>
+    <string name="msg_limpio">Collage vaciado</string>
+    <string name="msg_restaurada">Foto restaurada a su estado original</string>
+    <string name="msg_restauradas_todas">Todas las fotos restauradas</string>
+    <string name="msg_compartir_error">No se pudo generar el collage para compartir</string>
+    <string name="msg_compartir_titulo">Compartir collage</string>
+    <string name="msg_sin_apps">No hay aplicaciones para compartir</string>
+    <string name="msg_guardado">Collage guardado en Imágenes/PhotoCollage</string>
+    <string name="msg_guardar_error">No se pudo guardar el collage</string>
+    <string name="msg_permiso_denegado">Sin permiso de almacenamiento no se puede guardar</string>
+    <string name="msg_restaurar_todas_hint">Mantén pulsado «Restaurar» para restaurar todas</string>
+
+    <!-- Diálogos -->
+    <string name="dlg_vaciar_titulo">Vaciar collage</string>
+    <string name="dlg_vaciar_msg">¿Seguro que quieres eliminar las %1$d fotos del collage? Esta acción no se puede deshacer.</string>
+    <string name="dlg_restaurar_todas_msg">¿Restaurar todas las fotos a su estado original?</string>
+    <string name="dlg_si">Sí, vaciar</string>
+    <string name="dlg_aceptar">Aceptar</string>
+    <string name="dlg_cancelar">Cancelar</string>
+    <string name="dlg_texto_titulo">Texto sobre la foto</string>
+    <string name="dlg_texto_hint">Escribe un texto</string>
+    <string name="dlg_texto_quitar">Quitar texto</string>
+    <string name="dlg_texto_tamano">Tamaño</string>
+    <string name="dlg_texto_pos_x">Posición horizontal</string>
+    <string name="dlg_texto_pos_y">Posición vertical</string>
+</resources>

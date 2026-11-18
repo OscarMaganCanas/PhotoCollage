@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Diseño vertical: título arriba, collage en el centro, controles abajo -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo_oscuro">
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/titulo_collage"
+        android:textColor="@color/acento"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvContador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/texto_gris"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitulo" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerCollage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="6dp"
+        android:clipToPadding="false"
+        android:padding="4dp"
+        app:layout_constraintBottom_toTopOf="@id/scrollControls"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvContador" />
+
+    <TextView
+        android:id="@+id/tvVacio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:gravity="center"
+        android:text="@string/msg_collage_vacio"
+        android:textColor="@color/texto_gris"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/recyclerCollage"
+        app:layout_constraintEnd_toEndOf="@id/recyclerCollage"
+        app:layout_constraintStart_toStartOf="@id/recyclerCollage"
+        app:layout_constraintTop_toTopOf="@id/recyclerCollage" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/recyclerCollage"
+        app:layout_constraintEnd_toEndOf="@id/recyclerCollage"
+        app:layout_constraintStart_toStartOf="@id/recyclerCollage"
+        app:layout_constraintTop_toTopOf="@id/recyclerCollage" />
+
+    <!-- Los controles se desplazan si la pantalla es pequeña; nunca tapan el collage entero -->
+    <ScrollView
+        android:id="@+id/scrollControls"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/fondo_panel"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_max="300dp"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <include
+            android:id="@+id/panelControles"
+            layout="@layout/controls_panel" />
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

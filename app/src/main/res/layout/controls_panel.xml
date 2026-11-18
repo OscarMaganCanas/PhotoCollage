@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Panel de controles reutilizado en vertical y en horizontal (<include>) -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp">
+
+    <!-- Fila 1: gestión de fotos -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAnadir"
+            style="@style/BotonControl"
+            android:text="@string/btn_anadir" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnEliminar"
+            style="@style/BotonControl.Peligro"
+            android:text="@string/btn_eliminar" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnEliminarTodas"
+            style="@style/BotonControl.Peligro"
+            android:text="@string/btn_eliminar_todas" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnColumnas"
+            style="@style/BotonControl"
+            android:text="@string/btn_columnas" />
+    </LinearLayout>
+
+    <!-- Fila 2: filtros -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnBlancoNegro"
+            style="@style/BotonControl.Filtro"
+            android:text="@string/btn_bn" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSepia"
+            style="@style/BotonControl.Filtro"
+            android:text="@string/btn_sepia" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRotar"
+            style="@style/BotonControl.Filtro"
+            android:text="@string/btn_rotar" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRestaurar"
+            style="@style/BotonControl"
+            android:text="@string/btn_restaurar" />
+    </LinearLayout>
+
+    <!-- Fila 3: extras -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnTexto"
+            style="@style/BotonControl.Filtro"
+            android:text="@string/btn_texto" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnGuardar"
+            style="@style/BotonControl"
+            android:text="@string/btn_guardar" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCompartir"
+            style="@style/BotonControl"
+            android:layout_weight="2"
+            android:text="@string/btn_compartir" />
+    </LinearLayout>
+
+    <!-- Brillo: 0..200, 100 = brillo original -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="6dp"
+        android:paddingEnd="6dp">
+
+        <TextView
+            android:id="@+id/tvBrillo"
+            style="@style/EtiquetaSlider"
+            android:text="@string/label_brillo" />
+
+        <SeekBar
+            android:id="@+id/seekBrillo"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:max="200"
+            android:progress="100" />
+    </LinearLayout>
+
+    <!-- Saturación (ampliación): 0..200 %, 100 = original -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="6dp"
+        android:paddingEnd="6dp">
+
+        <TextView
+            android:id="@+id/tvSaturacion"
+            style="@style/EtiquetaSlider"
+            android:text="@string/label_saturacion" />
+
+        <SeekBar
+            android:id="@+id/seekSaturacion"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:max="200"
+            android:progress="100" />
+    </LinearLayout>
+</LinearLayout>
